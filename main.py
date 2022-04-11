@@ -6,14 +6,13 @@ from guizero import App, PushButton, yesno, question, warn, TextBox, Text, Windo
 from time import sleep #Timeout.
 from csv import reader, writer #Working with files.
 from requests import get #Call API.
-import os # secrets
 
 app = App() 
 app.hide() #Don't show the blank app window.
 tries = 5 
 timer = 30 #30 sec timer.
 guest = 0
-API_KEY = os.environ['API_KEY']
+API_KEY = "baaf201731c0cbc4af2c519cb578f907"
 WS_URL = "http://api.weatherstack.com/current" #API location.
 devs = ['ryan cullen', 'dev man']
 
